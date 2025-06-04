@@ -3,6 +3,7 @@ import { signInWithPopup, signOut } from "firebase/auth";
 import { useState } from "react";
 
 export default function LoginButton () {
+  
   const [userName, setUserName] = useState(
     () => localStorage.getItem("name") || ""
   );
